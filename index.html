@@ -16,7 +16,7 @@
     <!-- NavBar -->
     <nav class="navbar navbar-expand-lg navbar-light navbar-toggleable-sm sticky-top" style="background-color: rgba(243, 168, 194, 1);  font-size: 19px;font-weight: 400; padding-left: 10px; padding-right: 10px;">
         <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">LOGO</a>
+                <a class="navbar-brand p-0 m-0" href="./index.html"><img src="./assests/logo.jpeg" alt="logo" style="width: 100px; height: auto;"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -34,7 +34,7 @@
 
     <!-- Body -->
     <!-- Banner Carousel -->
-    <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselIndicators" class="carousel slide pb-4" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -62,7 +62,7 @@
     </div>
     <!-- Introduction --> 
     <div>
-        <p>
+        <p class="resume">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
             molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
             aliquam voluptatem veniam, est atque cumque eum delectus sint!
@@ -70,11 +70,11 @@
     </div>
     <!-- First section --> 
     <h2>Nuestros juguetes según metodología</h2>
-    <div class="row row-cols-md-2" style="margin-left: 20%; margin-right: 20%;">
+    <div class="row row-cols-md-2" style="margin-left: 15%; margin-right: 15%;">
         <div class="col">
             <div class="card">
                 <img src="./assests/montessori_1.jpg" class="card-img-top" alt="montessori_1">
-                <div class="card-body">
+                <div id="card-Fs" class="card-body">
                     <h5 class="card-title">Montessori</h5>
                 </div>
             </div>
@@ -82,7 +82,7 @@
         <div class="col">
             <div class="card">
                 <img src="./assests/pikler_1.jpg" class="card-img-top" alt="pikler_1">
-                <div class="card-body">
+                <div id="card-Fs" class="card-body">
                     <h5 class="card-title">Pikler</h5>
                 </div>
             </div>
@@ -119,13 +119,51 @@
         </div>
     </section>
     <!-- Third section --> 
-
+    <h2>Comentarios de nuestros clientes</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 w-100" style="margin-bottom: 40px;">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <img src="./assests/comment_1_img.png" class="card-img-top" alt="comment_1_img">
+                    <img src="./assests/comment_1.png" class="card-img-top" alt="comment_1">
+                    <p class="card-text"><small class="text-muted">Marzo 2022</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <img src="./assests/comment_2_img.png" class="card-img-top" alt="comment_2_img">
+                    <img src="./assests/comment_2.png" class="card-img-top" alt="comment_2">
+                    <p class="card-text"><small class="text-muted">Noviembre 2021</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <img src="./assests/comment_3_img.png" class="card-img-top" alt="comment_3_img">
+                    <img src="./assests/comment_3.png" class="card-img-top" alt="comment_3">
+                    <p class="card-text"><small class="text-muted">Septiembre 2021</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <img src="./assests/comment_4_img.png" class="card-img-top" alt="comment_4_img">
+                    <img src="./assests/comment_4.png" class="card-img-top" alt="comment_4">
+                    <p class="card-text"><small class="text-muted">Septiembre 2021</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Footer -->
     <footer class="page-footer pt-4 navbar-light" style="background-color: rgba(243, 168, 194, 1);  font-size: 19px;font-weight: 400;">
         <div class="container-fluid text-center text-md-start p-4">
             <div class="row">
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                    <h4><a class="navbar-brand" href="./index.html">LOGO</a></h4>
+                    <img src="./assests/logo.jpeg" alt="logo" style="width: 100px; height: auto; padding-bottom: 10px;">
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
                         molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
@@ -133,6 +171,12 @@
                     </p>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="h4">Nosotros</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./pages/FAQ.html" style="color:rgb(33, 31, 31);  text-decoration: none; font-size: 16px;">FAQ</a></li>
+                        <li><a href="./pages/galeria.html" style="color:rgb(33, 31, 31);  text-decoration: none; font-size: 16px;">Galeria</a></li>
+                        <li><a href="#" style="color:rgb(33, 31, 31);  text-decoration: none; font-size: 16px;">Nuestra historia</a></li>
+                    </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5 class="h4">Contáctanos</h5>
