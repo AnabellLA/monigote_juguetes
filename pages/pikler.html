@@ -15,54 +15,80 @@
 
     <body>
         <!-- NavBar -->
-        <nav class="navbar navbar-expand-lg navbar-light navbar-toggleable-sm sticky-top" style="background-color: rgba(243, 168, 194, 1);  font-size: 19px;font-weight: 400; padding-left: 10px; padding-right: 10px;">
-            <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-toggleable-sm sticky-top">
+                <div class="container-fluid bg-light">
                     <a class="navbar-brand p-0 m-0" href="../index.html"><img src="../assests/logo.jpeg" alt="logo" style="width: 100px; height: auto;"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                <div class="collapse navbar-collapse justify-content-end text-center" id="navbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link h5" href="../pages/nosotros.html">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link h5" href="../pages/montessori.html">Montessori</a></li>
-                        <li class="nav-item"><a class="nav-link h5" href="../pages/pikler.html">Pikler</a></li>
-                        <li class="nav-item"><a class="nav-link h5" href="../pages/galeria.html">Galeria</a></li>
-                        <li class="nav-item"><a class="nav-link h5" href="../pages/FAQ.html">FAQ</a></li>
-                    </ul>
+                    <div class="collapse navbar-collapse justify-content-end text-center" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link h5" href="../pages/nosotros.html">Nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link h5" href="../pages/montessori.html">Montessori</a></li>
+                            <li class="nav-item"><a class="nav-link h5" href="../pages/pikler.html">Pikler</a></li>
+                            <li class="nav-item"><a class="nav-link h5" href="../pages/galeria.html">Galeria</a></li>
+                            <li class="nav-item"><a class="nav-link h5" href="../pages/FAQ.html">FAQ</a></li>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
     
 
         <main>
             <!-- First section --> 
             <section>
-                <div id="">
+                <div id="titlePikler">
                     <h1>PIKLER</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam voluptatem veniam, est atque cumque eum delectus sint!</p>
+                    <p id="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam voluptatem veniam, est atque cumque eum delectus sint!</p>
                 </div>
             </section>
 
             <!--  Second section -->
-            <div class="grid">
-                <div class="g-col-6">
-                    <img id="" src="../assests/pikler1.jpg" class="w-100"/>
+            <section id="secctionPikler">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 w-100">
+                    <div class="col">
+                        <div class="card">
+                            <img src="../assests/pikler1.jpg" class="card-img-top" alt="luces">
+                            <div class="card-body">
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="../assests/pikler2.jpeg" class="card-img-top" alt="spinner">
+                            <div class="card-body">
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="../assests/pikler3.jpeg" class="card-img-top" alt="cerraduras">
+                            <div class="card-body">
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="../assests/pikler4.jpg" class="card-img-top" alt="cerraduras">
+                            <div class="card-body">
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="g-col-6">
-                    <img id="" src="../assests/pikler2.jpeg" class="w-100"/>
-                </div>
-                <div class="g-col-6">
-                    <img id="" src="../assests/pikler3.jpeg" class="w-100"/>
-                </div>
-                <div class="g-col-6">
-                    <img id="" src="../assests/pikler4.jpg" class="w-100"/>
-                </div>
-            </div>
+                
+            </section>
 
             <!-- Third section --> 
-            <section>
+            <section class="secctionBtn">
                 <div>
-                    <a href="https://api.whatsapp.com/send?phone=5493435180140&text=Hola, Necesito más información!"  target="blank" class="btn">COMPRAs ONLINE</a>
+                    <p>Pedinos el que mas te guste, comunicate con nosotros desde nuestro whatsapp</p>
+                    <button type="button" class="btn btn-success" id="btn2"><a href="https://api.whatsapp.com/send?phone=5493435180140&text=Hola, Necesito más información!"  target="blank" style="text-decoration: none; color: white;">COMPRAS ONLINE</a></button>
                 </div>
             </section>
         </main>
