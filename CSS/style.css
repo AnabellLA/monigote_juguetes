@@ -53,14 +53,23 @@ header #navbarNavAltMarkup{
 }
 
 /*Seccion montessori*/
+#secctionFirt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#imgEncabezadoM{
+    width: 100%;
+}
 #titleMont{
     text-align: center;
     width: 100%;
     padding-top: 25px;
 }
 
-#substitute{
+.substitute{
     text-align: center;
+    padding: 5%;
 }
 
 #cardHerramientas{
@@ -68,45 +77,96 @@ header #navbarNavAltMarkup{
     padding-right: 2%;
 }
 
-#secctionFirt{
-    margin-top: 5%;
-    margin-bottom: 5%
-}
 
-#secctionThird{
-    margin-top: 5%;
+.secctionThird{
+    margin-top: 3%;
     background-color: #eef6b0;
     padding: 3%;
 }
 
-.secctionBtn{
+.imgMonte:hover{
+    transition: all 300ms;
+    transform: scale(1.05);
+}
+
+
+/*Seccion pikler*/
+#sectionPikler{
+    margin: 0% !important;
+}
+
+.sectionBtn{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    background-color:rgba(117, 249, 242, 1); 
+    text-align: center;
+    padding: 5%;
 }
 
-#btn1{
-    margin-left: 35%;
-}
 
-/*Seccion pikler*/
-#secctionPikler{
-    margin: 5%;
-}
-
-#btn2{
-    margin-left: 35%;
+.imgPikler{
+    width: 100%;
 }
 
 #titlePikler{
     text-align: center;
     width: 100%;
-    padding-top: 25px;
+}
+
+#imgEncabezado{
+    width: 100%;
 }
 
 #text{
     text-align: center;
-    margin: 0% 7% 3%;
+    padding: 3% 7% 3%;
+    background-color: #FADDB5;
 }
+
+/*Seccion Nosotros*/
+#titleNos{
+    text-align: center;
+    width: 100%;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: bold;
+    margin-top:5%;
+    margin-bottom: 3%;
+}
+
+#encabezadoNos{
+    width: 100%;
+}
+#secondSectionA{
+    width: 100%;
+}
+#substituteNos{
+    text-align: center;
+}
+
+#secondSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sectionObj{
+    display: flex;
+    flex-direction: row;
+}
+
+.circular{
+    border-radius: 50%;
+    width: 34%;
+    height: 50%;
+    row-gap: 10%;
+}
+
+#secondSectionB{
+    margin: 5%;
+    text-align: center;
+    font-size: 21px;
+}
+
+
